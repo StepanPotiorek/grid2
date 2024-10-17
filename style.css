@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-gap: 10px;
+  padding: 10px;
+  border: solid 1px black;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "one two" "three three" "four five";
+}
+
+.item {
+  border: solid 1px red;
+  background: #ffb6c1;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.one {
+  background: pink;
+  color: white;
+
+  grid-area: one;
+} 
+
+.two {
+  background: pink;
+  color: white;
+
+  grid-area: two;
+
+}
+.three {
+  background: blue;
+  color: white;
+
+  grid-area: three;
+}
+
+.four {
+  background: pink;
+  color: white;
+
+  grid-area: four;
+}
+
+.five {
+  background: pink;
+  color: white;
+
+  grid-area: five;
+}
